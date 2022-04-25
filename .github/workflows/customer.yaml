@@ -5,4 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test using resuable module
-        uses: sobbspt/gha-reusable-module@v2
+        uses: sobbspt/gha-reusable-module@v3
+        with:
+          dd-api-key: ${{ secrets.DATADOG_API_KEY }}
