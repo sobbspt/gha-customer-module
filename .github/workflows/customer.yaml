@@ -8,3 +8,7 @@ jobs:
         uses: sobbspt/gha-reusable-module@v4
         with:
           dd-api-key: ${{ secrets.DATADOG_API_KEY }}
+      - name: Test multiple metrics
+        uses: int128/datadog-actions-metrics@v1
+        with:
+          datadog-api-key: ${{ secrets.DATADOG_API_KEY }}
